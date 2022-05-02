@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateAccount">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="사용자 계정 생성"
+        android:textColor="#CE172987"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        app:srcCompat="@drawable/create_account_picture" />
+
+    <EditText
+        android:id="@+id/createID"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_marginStart="-90dp"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/user"
+        android:hint="ID"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Button
+        android:id="@+id/createCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/createID"
+        android:backgroundTint="#CE172987"
+        android:onClick="mOnClick"
+        android:text="CHECK" />
+
+    <EditText
+        android:id="@+id/createPassword"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@android:drawable/ic_secure"
+        android:ems="10"
+        android:hint="암호"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/createName"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/user"
+        android:ems="10"
+        android:hint="이름"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/createAccount"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#CE172987"
+        android:onClick="mOnClick"
+        android:text="가입" />
+
+</RelativeLayout>

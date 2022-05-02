@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ui.gallery.GalleryFragment" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/create_account_picture" />
+
+    <TextView
+        android:id="@+id/changeID"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/user"
+        android:text="UserID" />
+
+    <EditText
+        android:id="@+id/changePassword"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:inputType="textPassword"
+        android:hint="신규암호"
+        android:drawableLeft="@android:drawable/ic_secure"/>
+
+    <EditText
+        android:id="@+id/changeName"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="UserName"
+        android:drawableLeft="@drawable/user"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/changeBtn"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="#CE172987"
+        android:text="변경"/>
+
+</LinearLayout>
